@@ -3,3 +3,15 @@ h1
 font-family:Tahoma;
 color:DarkSlateGray;
 }
+
+a:link, a:hover, a:active
+{
+color:green;
+text-decoration:none;
+}
+
+a:visited
+{
+color:rgb(160,0,0);
+text-decoration:none;
+}
