@@ -15,3 +15,9 @@ a:visited
 color:red;
 text-decoration:none;
 }
+
+body
+{
+background-image:url('images/a1bg.jpg');
+}
+
