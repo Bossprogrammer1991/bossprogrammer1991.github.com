@@ -21,3 +21,8 @@ body
 background-image:url('images/a1bg.jpg');
 }
 
+h2
+{
+font-family:Courier;
+color:black;
+}
