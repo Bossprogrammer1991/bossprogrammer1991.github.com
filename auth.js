@@ -32,8 +32,8 @@ function handleAuthResult(authResult) {
     // Auth was successful; hide the things related to prompting for auth and show the things
     // that should be visible after auth succeeds.
     $('.pre-auth').hide();
-    loadAPIClientInterfaces();
     console.log(gapi.auth.getToken());
+    loadAPIClientInterfaces();
   } else {
     // Make the #login-link clickable, and attempt a non-immediate OAuth 2 client flow.
     // The current function will be called when that flow is complete.
