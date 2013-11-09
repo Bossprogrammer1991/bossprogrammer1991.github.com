@@ -19,6 +19,7 @@ googleApiClientReady = function() {
 // it will succeed with no user intervention. Otherwise, it will fail and the user interface
 // to prompt for authorization needs to be displayed.
 function checkAuth() {
+  console.log(gapi.auth.getToken())
   gapi.auth.authorize({
     client_id: OAUTH2_CLIENT_ID,
     scope: OAUTH2_SCOPES,
