@@ -33,6 +33,7 @@ function handleAuthResult(authResult) {
     // that should be visible after auth succeeds.
     $('.pre-auth').hide();
     loadAPIClientInterfaces();
+    console.log(gapi.auth.getToken());
   } else {
     // Make the #login-link clickable, and attempt a non-immediate OAuth 2 client flow.
     // The current function will be called when that flow is complete.
@@ -50,7 +51,6 @@ function handleAuthResult(authResult) {
 // This is required before using the Google APIs JS client; more info is available at
 // http://code.google.com/p/google-api-javascript-client/wiki/GettingStarted#Loading_the_Client
 function loadAPIClientInterfaces() {
-  console.log(gapi.auth.getToken());
   gapi.client.load('youtube', 'v3', function() {
     handleAPILoaded();
   });
