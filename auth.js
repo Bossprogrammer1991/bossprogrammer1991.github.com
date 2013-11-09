@@ -19,7 +19,6 @@ googleApiClientReady = function() {
 // it will succeed with no user intervention. Otherwise, it will fail and the user interface
 // to prompt for authorization needs to be displayed.
 function checkAuth() {
-  console.log(gapi.auth.getToken())
   gapi.auth.authorize({
     client_id: OAUTH2_CLIENT_ID,
     scope: OAUTH2_SCOPES,
@@ -51,6 +50,7 @@ function handleAuthResult(authResult) {
 // This is required before using the Google APIs JS client; more info is available at
 // http://code.google.com/p/google-api-javascript-client/wiki/GettingStarted#Loading_the_Client
 function loadAPIClientInterfaces() {
+  console.log(gapi.auth.getToken());
   gapi.client.load('youtube', 'v3', function() {
     handleAPILoaded();
   });
