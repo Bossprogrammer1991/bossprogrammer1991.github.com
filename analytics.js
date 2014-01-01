@@ -207,7 +207,7 @@
         dimensions: 'day',
         // See https://developers.google.com/youtube/analytics/v1/available_reports for details
         // on different filters and metrics you can request when dimensions=day.
-        metrics: 'views',
+        metrics: 'subscribersGained',
         filters: 'video==' + videoId
       });
 
