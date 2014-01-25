@@ -44,7 +44,7 @@
       // that should be visible after auth succeeds.
       $('.pre-auth').hide();
       $('.post-auth').show();
-
+   console.log(gapi.auth.getToken());
       loadAPIClientInterfaces();
     } else {
       // Auth was unsuccessful. Show things related to prompting for auth
@@ -207,7 +207,7 @@
         dimensions: 'day',
         // See https://developers.google.com/youtube/analytics/v1/available_reports for details
         // on different filters and metrics you can request when dimensions=day.
-        metrics: 'subscribersGained',
+        metrics: 'views',
         filters: 'video==' + videoId
       });
 
@@ -269,7 +269,7 @@
       chart.draw(chartDataTable, {
         // Additional options can be set if desired.
         // See https://developers.google.com/chart/interactive/docs/reference#visdraw
-        title: 'Views per Day of Video ' + videoId
+        title: 'Views per day of Video ' + videoId
       });
     } else {
       displayMessage('No data available for video ' + videoId);
