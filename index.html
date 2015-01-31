@@ -1,15 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
-<title>Eric Mariasis's Homepage</title>
-<link media="print, screen and (min-device-width: 481px)" href="about.css" rel="stylesheet" />
-<link rel="stylesheet" href="handheld.css" media="only screen and (max-device-width:480px)"/>
+  <title>Eric Mariasis</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <style>
+    table { table-layout: fixed; }
+  </style>
 </head>
 <body>
-<h1>Eric David Mariasis</h1>
-<p><img src="images/Me.jpg" width="367" height="480" alt="Picture of Me" /></p>
-<p><a href="resume.html">Click Here For My Resume</a></p>
-<p><a href="bio.html">Click Here For My Short Biography</a></p>
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+	  <ul class="nav navbar-nav navbar-left">
+	    <li class><img src="images/Me.jpg" class="img-thumbnail" alt="Eric Mariasis" width="50" height="50"></li>
+	  </ul>
+	  <a class="navbar-brand" href="index.html">Eric Mariasis</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+	  <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Tufts University <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="campus_activities.html">Campus Activities</a></li>
+          </ul>
+        </li>
+        <li class><a href="technology_skills.html">Technology Skills</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+	
+<div class="container">
+  <h1>Who am I?</h1>
+  </br>
+  <h4>My name is Eric David Mariasis and I recently graduated from <a href="http://www.tufts.edu">Tufts University</a> with a Bachelor of Science</h4>
+  <h4>in Computer Science from the Engineering School. In July of 2014, I began a position as a software engineer</h4>
+  <h4>at <a href="http://www.raytheon.com">Raytheon</a> doing C++ programming for radar-based technologies. When I am not hard at work, I am either</h4>
+  <h4>reading a fascinating book, exercising, or socializing with friends in the city.</h4>
+</div>
+
 </body>
 </html>
